@@ -15,7 +15,7 @@ export default function Home({ allPosts }) {
                 <p>Hi, I'm Sid!</p>
                 <p>
                     Currently developing my skills in cyber security, go, and
-                    deno
+                    deno.
                 </p>
             </section>
 
