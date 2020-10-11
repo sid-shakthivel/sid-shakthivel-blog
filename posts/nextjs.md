@@ -15,4 +15,23 @@ Sites can run faster with client side routing, when a user clicks a route, its h
 
 If you haven't heard of css modules, you should pay attention to this, they allow you to write conventional css with a twist. When defining styles for a component you can make sure only a certain bit of css works for each component and you can write custom names for your modules of css! Next.js supports this out of the box.
 
+```
+.container {
+  max-width: 36rem;
+  padding: 0 1rem;
+  margin: 3rem auto 6rem;
+}
+```
+
+This is an example of a module of css.
+
+You use it like this:
+
+```
+<header className={styles.header}>
+</header>
+```
+
 Finally, your development environment supports Fast Refresh meaning as soon as you make a change to your code your site updates automatically so you can relish in the result (hopefully).
+
+All the code for this website is available at: https://github.com/sid-shakthivel/nextjs-blog
