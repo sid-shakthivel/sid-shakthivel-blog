@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import { getAllPosts } from '../lib/posts';
-import Link from 'next/Link';
+import Link from 'next/link';
 import Date from '../components/Date';
 
 export default function Home({ allPosts }) {
