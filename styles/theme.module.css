@@ -1,0 +1,24 @@
+.themeIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+}
+
+.themeIcon_moon {
+    color: #999;
+}
+
+.themeIcon_sun {
+    color: #999;
+}
+
+.themeIcon_sun {
+    cursor: pointer;
+    color: #f8f8f8;
+}
+
+.themeIcon_moon:hover {
+    cursor: pointer;
+    color: #070707;
+}

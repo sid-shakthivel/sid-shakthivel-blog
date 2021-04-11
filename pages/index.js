@@ -1,44 +1,88 @@
-import Head from 'next/head';
-import Layout, { siteTitle } from '../components/Layout';
-import utilStyles from '../styles/utils.module.css';
-import { getAllPosts } from '../lib/posts';
+import { useContext } from 'react';
 import Link from 'next/link';
-import Date from '../components/Date';
+import { getAllPosts } from '../lib/posts';
+import utilStyles from '../styles/utils.module.css';
+import indexStyles from '../styles/index.module.css';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope as mail } from '@fortawesome/free-solid-svg-icons';
+import { faGithub as git } from '@fortawesome/free-brands-svg-icons';
+
+import { lightTheme, darkTheme } from '../components/Theme';
+
+import { ThemeContext } from '../contexts/ThemeContext';
 
 export default function Home({ allPosts }) {
+    const themeContext = useContext(ThemeContext);
     return (
-        <Layout home>
-            <Head>
-                <title>{siteTitle}</title>
-            </Head>
-            <section className={utilStyles.headingMd}>
-                <p>Hi, I'm Sid!</p>
-                <p>
-                    Currently developing my skills in cyber security, go, and
-                    deno.
-                </p>
-            </section>
-
-            <section
-                className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}
-            >
-                <h2 className={utilStyles.headingLg}>Blog</h2>
-                <ul className={utilStyles.list}>
-                    {allPosts.map(({ id, date, title }) => (
-                        <li className={utilStyles.listItem} key={id}>
-                            <Link href={`/posts/${id}`}>
-                                <a>{title}</a>
+        <div
+            className={indexStyles.layout}
+            style={themeContext.theme === 'dark' ? darkTheme : lightTheme}
+        >
+            <div className={indexStyles.blogSection}>
+                <h1 className={utilStyles.headingXl}>Blog Posts</h1>
+                {allPosts.map((post) => {
+                    return (
+                        <div className={utilStyles.listItem} key={post.id}>
+                            <Link href={`/posts/${post.id}`}>
+                                <a
+                                    className={utilStyles.headingMd}
+                                    key={post.id}
+                                >
+                                    {post.title}
+                                </a>
                             </Link>
                             <br />
-                            <small className={utilStyles.lightText}>
-                                <Date dateString={date} />
-                            </small>
-                            <br />
-                        </li>
-                    ))}
-                </ul>
-            </section>
-        </Layout>
+                            <span className={`${utilStyles.lightText}`}>
+                                {post.date}
+                            </span>
+                        </div>
+                    );
+                })}
+            </div>
+            <div className={indexStyles.generalSection}>
+                <img
+                    src="/images/profile.jpg"
+                    className={`${indexStyles.generalSection_image} ${utilStyles.borderCircle}`}
+                />
+                <h1 className={utilStyles.heading2Xl}>Siddharth Shakthivel</h1>
+                <div
+                    className={indexStyles.generalSection_communicationChannels}
+                >
+                    <a
+                        className={indexStyles.communicationChannels_link}
+                        href="https://github.com/sid-shakthivel"
+                    >
+                        <FontAwesomeIcon
+                            icon={git}
+                            size="3x"
+                            style={
+                                themeContext.theme === 'dark'
+                                    ? darkTheme
+                                    : lightTheme
+                            }
+                        />
+                    </a>
+                    <a
+                        className={indexStyles.communicationChannels_link}
+                        href="mailto: sid.shakthivel@gmail.com"
+                    >
+                        <FontAwesomeIcon
+                            icon={mail}
+                            size="3x"
+                            style={
+                                themeContext.theme === 'dark'
+                                    ? darkTheme
+                                    : lightTheme
+                            }
+                        />
+                    </a>
+                </div>
+                <p className={utilStyles.headingMd}>
+                    A blog about my programming projects
+                </p>
+            </div>
+        </div>
     );
 }
 

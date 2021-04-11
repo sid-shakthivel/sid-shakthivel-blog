@@ -1,0 +1,16 @@
+.postSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.postSection_image {
+    width: 8rem;
+	height: 8rem;
+}
+
+.postInformation {
+    max-width: 55%;
+}
