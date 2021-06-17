@@ -45,7 +45,9 @@ export default function Home({ allPosts }) {
                     src="/images/profile.jpg"
                     className={`${indexStyles.generalSection_image} ${utilStyles.borderCircle}`}
                 />
-                <h1 className={utilStyles.heading2Xl}>Siddharth Shakthivel</h1>
+                <h1 className={utilStyles.heading2Xl}>
+                    Siddharth Shakthivel GOD
+                </h1>
                 <div
                     className={indexStyles.generalSection_communicationChannels}
                 >
