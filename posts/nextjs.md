@@ -1,5 +1,5 @@
 ---
-title: 'A introduction to Next.js'
+title: 'An introduction to Next.js'
 date: '2020-10-11'
 ---
 
