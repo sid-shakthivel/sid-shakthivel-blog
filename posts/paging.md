@@ -14,11 +14,8 @@ Next to implement paging we need 2 things a PMM and a VMM. A PMM (Physical Memor
 
 Personally, I've identity mapped my kernel - this is to say all physical addresses are equal to virtual addresses. This means that 0xb10 virtual address is the same as the physical address 0xb10. To accomplish this I've used 2 structures, a page directory and 1024 page tables. The page directory contains entries to page tables. Each page table entry points to a physical address. Each Page Directory entry and Page Table entry must be page aligned. To fill the page directory, we loop over the array and enter the address of our page tables (simply just a pointer). To get the correct index of the page table array, I divide the current address by 4096 and fill that in with the current address. After we store page tables and page tables (and of course our kernel code), we can use the rest of memory to allocate pages using our page frame allocator (it all works since it's all identity mapped)!
 
-Our memory looks a bit like this:
-| Kernel | Page Directory | | Page Tables | Free Memory |
-| ----------- | ----------- | | ----------- | | ----------- |
-
-Problem
+Our memory looks a bit like this:\
+Kernel | Page Directory | Page Tables | Free Memory
 
 To enable paging, we load the address of the page directory to the cr3 register and set the paging and protection bits of cr0.
 
