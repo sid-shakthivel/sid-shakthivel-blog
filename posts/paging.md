@@ -18,6 +18,8 @@ Our memory looks a bit like this:
 | Kernel | Page Directory | | Page Tables | Free Memory |
 | ----------- | ----------- | | ----------- | | ----------- |
 
+Problem
+
 To enable paging, we load the address of the page directory to the cr3 register and set the paging and protection bits of cr0.
 
 Well that is paging! For more information don't hesitate to email me or visit https://wiki.osdev.org/Paging or http://www.jamesmolloy.co.uk/tutorial_html/6.-Paging.html.
