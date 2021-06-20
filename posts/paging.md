@@ -16,6 +16,7 @@ Personally, I've identity mapped my kernel - this is to say all physical address
 
 Our memory looks a bit like this:
 | Kernel | Page Directory | | Page Tables | Free Memory |
+| ----------- | ----------- | | ----------- | | ----------- |
 
 To enable paging, we load the address of the page directory to the cr3 register and set the paging and protection bits of cr0.
 
