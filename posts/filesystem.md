@@ -7,7 +7,7 @@ Another thing a kernel needs is a file system. In this article you'll learn abou
 
 A file system is simply a way of organizing files or data into logical sections. An initial ramdisk is a filesystem loaded into memory when the kernel boots. Grub has a feature called grub modules - grub basically loads your file and places it in memory for you. The simplest file system is to use a TAR ball. TAR is short for tape archive and is used to archive files. Note that archiving files is just to put a bunch of files/folders into one large file. TAR is often used with gzip as it compresses the TAR ball. Gzip is a lossless compression method - it removes redundancies in data to reduce its size. 
 
-Once you've loaded your TAR ball into memory, you'll need to parse it. As mentioned before, TAR concatenates files into one big file - each file gets a header which is padded up to 512 bytes. A TAR Header will look like this:\
+Once you've loaded your TAR ball into memory, you'll need to parse it. As mentioned before, TAR concatenates files into one big file - each file gets a header which is padded up to 512 bytes. A TAR Header will look like this:
 - char szFilename[100]
 - char szFileMode[8]
 - char szUID[8]
