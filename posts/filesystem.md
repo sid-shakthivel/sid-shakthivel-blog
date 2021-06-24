@@ -22,4 +22,6 @@ To parse the TAR file, loop over it stopping where the header's filename is the 
 
 Wait we're not finished. A filesystem is essentially a graph composed of different nodes. For example it could have many paths like: INITRD -> FOLDER1 -> TEST.TXT, INITRD -> FOLDER1 -> WORLD.TXT, INITRD -> FOLDER2 -> HELLO.TXT. Each node should have an array of pointers to stuff in itself. Eg FOLDER1 would have pointers to TEXT.TXT, and WORLD.TXT - note that a normal file like TEST.TXT won't have anything in it's array of pointers. The name of a node (current) is it's complete path (INITRD/FOLDER1/TEST.TXT) - find the name of the node (previous) before it and push the pointer of the current in previous' array of stuff in it. This will establish a connection between the two nodes. For example current could be TEST.TXT, and previous could be FOLDER1 - we want a pointer to TEST.TXT in FOLDER1's array of pointers.
 
-Check out my implementation of a simple filesystem here: https://github.com/sid-shakthivel/SidOS/blob/main/kernel/include/filesystem.h. Hope you find this article useful!
+Check out my implementation of a simple filesystem here:\
+https://github.com/sid-shakthivel/SidOS/
+Hope you found this article useful!
