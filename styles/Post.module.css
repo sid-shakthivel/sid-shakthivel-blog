@@ -8,22 +8,23 @@
 
 .postSection_image {
     width: 8rem;
-	height: 8rem;
+    height: 8rem;
 }
 
 .postInformation {
     max-width: 55%;
 }
 
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
     .postInformation {
         max-width: 100vw !important;
-        padding: 0rem;
-        margin: 0rem;
+        margin: 0rem !important;
+        padding: 0rem !important;
     }
 
     .postSection {
-        width: 100vw !important;
-        padding: 0rem;
+        width: 100% !important;
+        padding: 0.1rem;
+        margin: 0 !important;
     }
 }
