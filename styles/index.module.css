@@ -33,3 +33,15 @@
 .communicationChannels_link:hover {
     opacity: 0.8;
 }
+
+@media (max-width: 575.98px) { 
+    .layout {
+        display: block;
+        grid-template-columns: 1fr;
+        height: 100vh !important;
+    }
+
+    .generalSection {
+        display: none;
+    }
+}

@@ -14,3 +14,13 @@
 .postInformation {
     max-width: 55%;
 }
+
+@media (max-width: 575.98px) { 
+    .postInformation {
+        max-width: 100vw !important;
+    }
+
+    .postSection {
+        width: 100% !important;
+    }
+}

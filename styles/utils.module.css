@@ -1,4 +1,5 @@
 .heading2Xl {
+    text-align: center;
     font-size: 2.5rem;
     line-height: 1.2;
     font-weight: 600;
@@ -21,6 +22,7 @@
 }
   
 .headingMd {
+    text-align: center;
     font-size: 1.2rem;
     line-height: 1.5;
 }
