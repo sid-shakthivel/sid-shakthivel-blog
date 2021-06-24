@@ -18,9 +18,12 @@
 @media (max-width: 575.98px) { 
     .postInformation {
         max-width: 100vw !important;
+        padding: 0rem;
+        margin: 0rem;
     }
 
     .postSection {
-        width: 100% !important;
+        width: 100vw !important;
+        padding: 0rem;
     }
 }

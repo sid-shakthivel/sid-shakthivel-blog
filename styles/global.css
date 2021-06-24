@@ -6,7 +6,8 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
-  height: 100% !important;
+  height: 100vh !important;
+  width: 100vw !important;
 }
 
 * {
@@ -26,3 +27,4 @@ img {
   max-width: 100%;
   display: block;
 }
+
