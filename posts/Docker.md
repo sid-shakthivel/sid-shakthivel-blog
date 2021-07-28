@@ -1,6 +1,6 @@
 ---
 title: 'Docker & Containers'
-date: '2021-07-06'
+date: '2021-07-28'
 ---
 
 Docker is a platform that allows developers to containerize an application. What are containers? Containers are essentially a runtime environment - they have their own OS, CPU, and RAM share and are fast, light, and isolated. Containers package your application, dependencies, and any thing else required into one package of sorts. Docker solves the problem of `it works on my machine`; all developers use the same environment so the same version off all dependencies are used. Furthermore, containers can be shipped onto production.
