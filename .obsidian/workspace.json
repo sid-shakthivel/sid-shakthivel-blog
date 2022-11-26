@@ -1,0 +1,152 @@
+{
+  "main": {
+    "id": "cd9ec345dafdef6e",
+    "type": "split",
+    "children": [
+      {
+        "id": "eaa344e3e1efb0db",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "96d554282daa6afb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/IOS Dev Notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6ba6b7f9ad7258d3",
+    "type": "split",
+    "children": [
+      {
+        "id": "13100394604aeb13",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "debb00f618f0e101",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "00c212c24c855621",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9b3a47128630b91f",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9b49a700fbed3a87",
+    "type": "split",
+    "children": [
+      {
+        "id": "cbee30d626ff3acc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "812877527771e313",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "posts/IOS Dev Notes.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "40fa42b8b1171ebe",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "posts/IOS Dev Notes.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "892815c328c0f1c9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "10753e47b94a1ed5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "posts/IOS Dev Notes.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "96d554282daa6afb",
+  "lastOpenFiles": [
+    "posts/Auditd.md",
+    "posts/Kernel Dev 6.md",
+    "posts/ERA.md",
+    "posts/Nodejs.md",
+    "posts/Webservers.md",
+    "posts/KernelDev3.md",
+    "posts/Kernel Dev 5.md",
+    "posts/ZumoRobotGyroscope.md",
+    "posts/ZumoRobotMagnetometer.md",
+    "posts/Paging.md"
+  ]
+}

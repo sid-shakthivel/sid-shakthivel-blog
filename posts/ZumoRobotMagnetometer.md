@@ -3,7 +3,7 @@ title: 'Zumo Robot & Magnetometer'
 date: '2021-07-06'
 ---
 
-I've began to venture into the wonderful world of electronics by making some simple programs with arduino and a Zumo Robot. The first thing I decided to do was to move the robot exactly 90 degrees - a seemingly simple task... However I can assure you it's not as simple as it seems!
+I recently purchased an arduino and a zumo robot thing I decided to do was to move the robot exactly 90 degrees - a seemingly simple task... However I can assure you it's not as simple as it seems!
 
 The Zumo Robot contains a magnetometer - these give the magnetic field strength for all 3 axis (x, y, z). The X axis measures the North component of the magnetic field, the Y axis measures the East component of the magnetic field, and the Z component measures the vertical component of the magnetic field. These are all vectors. Our magnetometer gives us these readings.
 
