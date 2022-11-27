@@ -3,6 +3,10 @@ title: 'Kernel Dev 6'
 date: '2022-06-02'
 ---
 
-### Syscalls
+### Syscalls and a standard library
 
 System calls are used to call a kernel service from userland as certain actions must be done with privilege. They can be used for process or file communication along with for interprocess communication and are invoked with software interrupts. My kernel like others is inspired by the POSIX standards with some custom syscalls too because my window manager communicates with the OS via them. 
+
+Some common syscalls include `read`, `lseek`, and `close`. If you've ever done any C programming, you'll know that these functions are essential for other functions - for example the `prinf` function uses the `write` syscall to actually write to `stdout`. When doing any sort of file handling in C, you'll be used to interacting with File descriptors. I hadn't done much pure C programming, so this was new to me however after browsing around on google, it didn't seem too complex. Luckily, I had written a FAT32 driver for my kernel already so I just created a struct called `File` and made a hashmap to map integers to file entries. A process/program can request to work with a file using the `open` syscall and this creates a new entry in my file entry hashmap. Other fucntions like `write` take in a file descriptor number however `1` refers to `stdout` and `2` refers to stderr.
+
+When compilling any userspace program, it will by default, compile using the standard library for your operating system eg x64 linux or arm darwin for example. However your kernel might be x64 or some variant of arm, and any programs which are written for your OS need to interact with it's specific syscalls as. A custom C standard library must be used. You could spend ages writing your very own custom library or you could use something like newlib or musl. I went with attempting to configure newlib which was a massive pain to setup however once it worked, was very rewarding. This process is covered in detail on osdev (google osdev newlib) and requires using specific versions of `autoconf` and `automake`. After, you've implemented the syscall stubs and configured a makefile to compile C programs, you can have the joy of running `printf("Hello World\n");` from a program on your very own operating system, seeing it fail, and fixing an endless stream of bugs ;).
