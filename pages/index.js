@@ -1,5 +1,7 @@
 import { useContext } from 'react';
 import Link from 'next/link';
+import Typewriter from 'typewriter-effect'
+
 import { getAllPosts } from '../lib/posts';
 import utilStyles from '../styles/utils.module.css';
 import indexStyles from '../styles/index.module.css';
@@ -12,14 +14,16 @@ import { lightTheme, darkTheme } from '../components/Theme';
 
 import { ThemeContext } from '../contexts/ThemeContext';
 
+// import Head from 'next/head';
+
 export default function Home({ allPosts }) {
     const themeContext = useContext(ThemeContext);
     return (
         <div
             className={indexStyles.layout}
             style={themeContext.theme === 'dark' ? darkTheme : lightTheme}
-        >
-            <div className={indexStyles.blogSection}>
+        >            
+            <div className={indexStyles.postList}>
                 <h1 className={utilStyles.headingXl}>Blog Posts</h1>
                 {allPosts.map((post) => {
                     return (
@@ -28,6 +32,7 @@ export default function Home({ allPosts }) {
                                 <a
                                     className={utilStyles.headingMd}
                                     key={post.id}
+                                    style={{ color: themeContext.theme == "dark" ? "#4e9af7" : '#026ff3'  }}
                                 >
                                     {post.title}
                                 </a>
@@ -40,12 +45,23 @@ export default function Home({ allPosts }) {
                     );
                 })}
             </div>
+
             <div className={indexStyles.generalSection}>
                 <img
                     src="/images/profile.jpg"
                     className={`${indexStyles.generalSection_image} ${utilStyles.borderCircle}`}
                 />
-                <h1 className={utilStyles.heading2Xl}>Siddharth Shakthivel</h1>
+
+                <Typewriter
+                    options={{
+                        strings: [`Siddharth Shakthivel`],
+                        autoStart: true,
+                        loop: true,
+                        wrapperClassName: utilStyles.heading2Xl,
+                        cursorClassName: utilStyles.heading2Xl,
+                    }}
+                />  
+
                 <div
                     className={indexStyles.generalSection_communicationChannels}
                 >
@@ -78,8 +94,13 @@ export default function Home({ allPosts }) {
                         />
                     </a>
                 </div>
-                <p className={utilStyles.headingMd}>
-                    A blog about my programming projects
+
+                <p className={utilStyles.headingSm} style={{ marginBottom: '0' }} >
+                    Hi I'm Sid, I'm currently an A level student studying at St Ninian's High School
+                </p>
+
+                <p className={utilStyles.headingSm} style={{ marginTop: '0' }}>
+                    This is a blog detailing whatever I'm currently working on
                 </p>
             </div>
         </div>

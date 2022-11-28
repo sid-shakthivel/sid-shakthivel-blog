@@ -63,7 +63,10 @@ var closedNodes []Point // Nodes that haven't calculated cost
 
 // Loop through all open nodes (initally just the starting one)
 for len(openNodes) > 0 { 
-		// Sort the open nodes to get the one with the lowest heuristic cost (cost to the actual node)
+		/* Sort the open nodes 
+		to get the one with the lowest heuristic cost 
+		(cost to the actual node)
+		*/
 		
 	// Get the node with the lowest cost and add it to closed list
 
@@ -73,7 +76,7 @@ for len(openNodes) > 0 {
 
 	/*
 		If the node is walkable and not on the closed list closed:
-		Calculate the heuristic cost, and set gcost, hcost, and parent
+		Calculate the heuristic cost, and set gcost, hcost
 		Add if open nodes list doesn't contain it
 	*/
 	

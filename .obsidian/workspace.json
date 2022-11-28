@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9cabd009c99dd198",
+        "id": "c6a9f2dc18ee7475",
         "type": "tabs",
         "children": [
           {
-            "id": "f62a72ca316a9473",
+            "id": "852cffeab87a1753",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -128,17 +128,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f62a72ca316a9473",
+  "active": "852cffeab87a1753",
   "lastOpenFiles": [
+    "posts/Kernel Dev 5.md",
     "posts/Kernel Dev 6.md",
-    "posts/GUD.md",
+    "posts/Kernel Dev 4.md",
     "posts/ELF.md",
     "posts/ERA.md",
-    "posts/IOS Dev Notes.md",
-    "posts/Auditd.md",
-    "posts/Nodejs.md",
-    "posts/Webservers.md",
-    "posts/KernelDev3.md",
-    "posts/Kernel Dev 5.md"
+    "posts/Core Data.md",
+    "posts/Basic Interpreter Theory.md",
+    "README.md",
+    "posts/Linux.md",
+    "posts/Auditd.md"
   ]
 }

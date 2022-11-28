@@ -3,6 +3,8 @@ title: 'Core Data'
 date: '2022-11-27'
 ---
 
+### Introduction
+
 Core data allows an app to save persistent data on device which makes it accessible whenever the app is used which can be useful for offline acess. It's a rather old framework which was first created in 2005. Whilst core data isn't a database, it manages an applications `object graph`. Whats an object graph? Simply a collection of objects which are connected with one another. Within the `MVC` model, Core Data falls under `M` where models are defined. 
 
 A data model defines how the data Core Data should store. Entities can be defined which are similar to classes and attributes can be added (like properties). Relationships can be defined between entities.

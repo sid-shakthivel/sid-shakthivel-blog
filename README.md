@@ -1,1 +1,1 @@
-A blog.
+My blog built in nextjs taking advantage of SSR.

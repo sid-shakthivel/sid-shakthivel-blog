@@ -25,14 +25,20 @@ export default function Theme() {
             {themeContext.theme === 'light' ? (
                 <FontAwesomeIcon
                     className={themeStyles.themeIcon_moon}
-                    onClick={() => themeContext.dispatch({ type: 'dark' })}
+                    onClick={() => {
+                        window.localStorage.setItem("theme", "dark");
+                        themeContext.dispatch({ type: 'dark' })
+                    }}
                     icon={fullMoon}
                     size="4x"
                 />
             ) : (
                 <FontAwesomeIcon
                     className={themeStyles.themeIcon_sun}
-                    onClick={() => themeContext.dispatch({ type: 'light' })}
+                        onClick={() => {
+                            window.localStorage.setItem("theme", "light");
+                            themeContext.dispatch({ type: 'light' })
+                    }}
                     icon={sun}
                     size="4x"
                 />

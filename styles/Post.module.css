@@ -1,10 +1,20 @@
 .postSection {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-left: 3rem;
+    padding-bottom: 3rem;
     flex-direction: column;
-    padding: 3rem;
+    max-height: 100vh;
+    overflow: auto;
 }
+
+/* .blogSectionMod {
+    padding: 1rem;
+    overflow: auto;
+    min-height: 100vh;
+    box-shadow: 4px 5px 10px #302929;
+
+    border-right: 1px solid #302929;
+} */
 
 .postSection_image {
     width: 8rem;
