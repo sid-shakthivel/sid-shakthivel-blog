@@ -5,8 +5,8 @@
     font-weight: 600;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
-  }
-  
+}
+
 .headingXl {
     font-size: 2rem;
     line-height: 1.3;
@@ -14,13 +14,13 @@
     letter-spacing: -0.05rem;
     margin: 1rem 0;
 }
-  
+
 .headingLg {
     font-size: 1.5rem;
     line-height: 1.4;
     margin: 1rem 0;
 }
-  
+
 .headingMd {
     text-align: center;
     font-size: 1.2rem;
@@ -31,11 +31,11 @@
     font-size: 1rem;
     line-height: 1.5;
 }
-  
+
 .borderCircle {
     border-radius: 9999px;
 }
-  
+
 .padding1px {
     padding-top: 1px;
 }
@@ -45,13 +45,24 @@
     padding: 0;
     margin: 0;
 }
-  
+
 .listItem {
     margin: 0 0 1.25rem;
 }
-  
+
 .lightText {
     color: #999;
 }
 
-  
+@media (max-width: 575.98px) {
+    .heading2Xl {
+        font-size: 2rem;
+    }
+
+    .headingSm {
+        font-size: 1rem;
+        padding: 0.5rem;
+        text-align: center;
+        line-height: 1.5;
+    }
+}

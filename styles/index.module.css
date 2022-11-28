@@ -36,12 +36,20 @@
 
 @media (max-width: 575.98px) {
     .layout {
-        display: block;
-        grid-template-columns: 1fr;
-        height: 100vh !important;
+        display: flex;
+        flex-direction: column-reverse;
+        overflow: auto !important;
     }
 
     .generalSection {
-        display: none;
+        padding: 1rem;
     }
+
+    .postWrapper .postList {
+        display: none !important;
+    }
+}
+
+.postWrapper {
+    display: block;
 }
