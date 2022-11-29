@@ -14,8 +14,6 @@ import { lightTheme, darkTheme } from '../components/Theme';
 
 import { ThemeContext } from '../contexts/ThemeContext';
 
-// import Head from 'next/head';
-
 export default function Home({ allPosts }) {
     const themeContext = useContext(ThemeContext);
     return (

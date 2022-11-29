@@ -13,33 +13,33 @@ import { lightTheme, darkTheme } from '../../components/Theme';
 export default function Post({ postData, allPosts }) {
     const themeContext = useContext(ThemeContext);
     return (
-        <div
-            className={indexStyles.layout}
-            style={themeContext.theme === 'dark' ? darkTheme : lightTheme}>
+        <div className={indexStyles.postWrapper}>
+            <div
+                className={indexStyles.layout}
+                style={themeContext.theme === 'dark' ? darkTheme : lightTheme}>
 
-            <div className={indexStyles.postWrapper}>
                 <div className={indexStyles.postList}>
-                    <h1 className={utilStyles.headingXl}>Blog Posts</h1>
-                    {allPosts.map((post) => {
-                        return (
-                            <div className={utilStyles.listItem} key={post.id}>
-                                <Link href={`/posts/${post.id}`}>
-                                    <a
-                                        className={utilStyles.headingMd}
-                                        key={post.id}
-                                        style={{ color: themeContext.theme == "dark" ? "#4e9af7" : '#026ff3'  }}
-                                    >
-                                        {post.title}
-                                    </a>
-                                </Link>
-                                <br />
-                                <span className={`${utilStyles.lightText}`}>
-                                    {post.date}
-                                </span>
-                            </div>
-                        );
-                    })}
-                </div>
+                        <h1 className={utilStyles.headingXl}>Blog Posts</h1>
+                        {allPosts.map((post) => {
+                            return (
+                                <div className={utilStyles.listItem} key={post.id}>
+                                    <Link href={`/posts/${post.id}`}>
+                                        <a
+                                            className={utilStyles.headingMd}
+                                            key={post.id}
+                                            style={{ color: themeContext.theme == "dark" ? "#4e9af7" : '#026ff3'  }}
+                                        >
+                                            {post.title}
+                                        </a>
+                                    </Link>
+                                    <br />
+                                    <span className={`${utilStyles.lightText}`}>
+                                        {post.date}
+                                    </span>
+                                </div>
+                            );
+                        })}
+                    </div>
 
                 <div
                 className={postStyles.postSection}
