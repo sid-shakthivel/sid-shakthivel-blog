@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/FAT.md",
+                "file": "posts/KernelDev3.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "eebd9f62a78bac26",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/Page Frame Allocator.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/FAT.md",
+                "file": "posts/Page Frame Allocator.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/FAT.md",
+                "file": "posts/Page Frame Allocator.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/FAT.md"
+                "file": "posts/Page Frame Allocator.md"
               }
             }
           }
@@ -136,17 +149,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d5e4b5d395968115",
+  "active": "eebd9f62a78bac26",
   "lastOpenFiles": [
     "posts/Filesystem.md",
-    "posts/FAT.md",
-    "posts/Kernel Dev 5.md",
+    "posts/Page Frame Allocator.md",
+    "posts/KernelDev3.md",
+    "posts/KernelDev1.md",
     "posts/Kernel Dev 6.md",
+    "posts/Kernel Dev 5.md",
     "posts/Kernel Dev 4.md",
+    "posts/FAT.md",
     "posts/ELF.md",
-    "posts/ERA.md",
-    "posts/Core Data.md",
-    "posts/Basic Interpreter Theory.md",
-    "README.md"
+    "posts/ERA.md"
   ]
 }

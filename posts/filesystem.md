@@ -3,6 +3,8 @@ title: 'Filesystem'
 date: '2021-06-23'
 ---
 
+Please checkout a newer article titled `FAT` to learn more about implementing a real file system.
+
 Another thing a kernel needs is a file system. In this article you'll learn about filesystems, grub modules, and a little about TAR.
 
 A file system is simply a way of organizing files or data into logical sections. An initial ramdisk is a filesystem loaded into memory when the kernel boots. Grub has a feature called grub modules - grub basically loads your file and places it in memory for you. The simplest file system is to use a TAR ball. TAR is short for tape archive and is used to archive files. Note that archiving files is just to put a bunch of files/folders into one large file. TAR is often used with gzip as it compresses the TAR ball. Gzip is a lossless compression method - it removes redundancies in data to reduce its size.
