@@ -20,6 +20,8 @@ Changes file permissions to a `mode` and a mode describes the permissions to mod
 Doesn't change the permissions of symbolic links. 
 Eg `chmod 740` allows read, write, execute for owner, read for group and no permission for other.
 
+![image info](/images/profile.jpg)
+
 ### Vim 
 Vim is a popular command based text editor. Vim is keyboard orientated which renders your mouse useless. It can make you a more effecient developer especially as a project gets larger and most coding requires hopping about a code base making changes. There are a number of keyboard shortcuts which I'll list below:
 - `:q` quit 

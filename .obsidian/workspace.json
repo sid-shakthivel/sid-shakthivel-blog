@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "c6a9f2dc18ee7475",
+        "id": "a61499aa468a8242",
         "type": "tabs",
         "children": [
           {
-            "id": "852cffeab87a1753",
+            "id": "d5e4b5d395968115",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "posts/FAT.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "posts/FAT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "posts/FAT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "posts/FAT.md"
+              }
             }
           }
         ]
@@ -128,8 +136,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "852cffeab87a1753",
+  "active": "d5e4b5d395968115",
   "lastOpenFiles": [
+    "posts/Filesystem.md",
+    "posts/FAT.md",
     "posts/Kernel Dev 5.md",
     "posts/Kernel Dev 6.md",
     "posts/Kernel Dev 4.md",
@@ -137,8 +147,6 @@
     "posts/ERA.md",
     "posts/Core Data.md",
     "posts/Basic Interpreter Theory.md",
-    "README.md",
-    "posts/Linux.md",
-    "posts/Auditd.md"
+    "README.md"
   ]
 }
