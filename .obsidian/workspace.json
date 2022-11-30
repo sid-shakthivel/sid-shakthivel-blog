@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "a61499aa468a8242",
+        "id": "3ac0e0b65c25bb64",
         "type": "tabs",
         "children": [
           {
-            "id": "d5e4b5d395968115",
+            "id": "aa9592dd609eb3c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/KernelDev3.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "eebd9f62a78bac26",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/Page Frame Allocator.md",
+                "file": "posts/FAT.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Page Frame Allocator.md",
+                "file": "posts/FAT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/Page Frame Allocator.md",
+                "file": "posts/FAT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/Page Frame Allocator.md"
+                "file": "posts/FAT.md"
               }
             }
           }
@@ -149,15 +136,15 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "eebd9f62a78bac26",
+  "active": "aa9592dd609eb3c9",
   "lastOpenFiles": [
-    "posts/Filesystem.md",
     "posts/Page Frame Allocator.md",
     "posts/KernelDev3.md",
+    "posts/Kernel Dev 4.md",
+    "posts/Filesystem.md",
     "posts/KernelDev1.md",
     "posts/Kernel Dev 6.md",
     "posts/Kernel Dev 5.md",
-    "posts/Kernel Dev 4.md",
     "posts/FAT.md",
     "posts/ELF.md",
     "posts/ERA.md"

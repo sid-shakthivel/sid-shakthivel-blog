@@ -1,3 +1,8 @@
+---
+title: 'Page Frame Allocator'
+date: '2022-11-30'
+---
+
 ### Premise
 One of the very first things I do when writing a kernel is setup a PFA, bar setting up uart or vga for debugging. There are a few ways to do this and I'll go over each briefly before covering my prefered method. This is essential as there needs to be system in order to allocate and free memory for both kernel and user processes. A `PFA` manages physical pages of `4096` bytes.
 
