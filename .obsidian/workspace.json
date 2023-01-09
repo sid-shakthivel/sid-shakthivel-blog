@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5359a498359e1420",
+        "id": "6ef0774c4b626b24",
         "type": "tabs",
         "children": [
           {
-            "id": "76d787c15e56606f",
+            "id": "6970f11df91ff15c",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -138,17 +138,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "76d787c15e56606f",
+  "active": "6970f11df91ff15c",
   "lastOpenFiles": [
+    "posts/HDR, Bloom, Perlin Noise.md",
+    "posts/Coordinate Systems.md",
+    "posts/Camera.md",
+    "posts/Colours, Lighting + Materials.md",
+    "posts/Light Casters + Model Loading.md",
+    "posts/ELF.md",
     "posts/Shaders.md",
     "posts/Textures.md",
     "Transformations.md",
-    "posts/GUD.md",
-    "posts/Graphics Pipeline.md",
-    "posts/AOC - Day 3.md",
-    "posts/AOC - Day 4.md",
-    "posts/OpenGL.md",
-    "posts/AOC - Day 1.md",
-    "posts/AOC - Day 2.md"
+    "posts/GUD.md"
   ]
 }
