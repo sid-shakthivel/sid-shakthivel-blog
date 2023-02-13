@@ -94,7 +94,7 @@ export default function Home({ allPosts }) {
                 </div>
 
                 <p className={utilStyles.headingSm} style={{ marginBottom: '0' }} >
-                    Hi I'm Sid, I'm currently an A level student studying at St Ninian's High School
+                    Hi I'm Sid, I'm currently an A level student with a passion for computer science
                 </p>
 
                 <p className={utilStyles.headingSm} style={{ marginTop: '0' }}>

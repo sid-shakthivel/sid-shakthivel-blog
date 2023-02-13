@@ -11,11 +11,28 @@
             "id": "6970f11df91ff15c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "posts/Camera.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cbbe1ec5df1d03e3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/More OpenglGL.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "posts/More OpenglGL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "posts/More OpenglGL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "posts/More OpenglGL.md"
+              }
             }
           }
         ]
@@ -138,11 +159,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6970f11df91ff15c",
+  "active": "cbbe1ec5df1d03e3",
   "lastOpenFiles": [
+    "posts/Camera.md",
     "posts/HDR, Bloom, Perlin Noise.md",
     "posts/Coordinate Systems.md",
-    "posts/Camera.md",
     "posts/Colours, Lighting + Materials.md",
     "posts/Light Casters + Model Loading.md",
     "posts/ELF.md",
