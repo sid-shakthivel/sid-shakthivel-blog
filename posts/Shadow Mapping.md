@@ -1,0 +1,10 @@
+---
+title: 'Basic Shadow Mapping'
+date: '2022-03-04'
+---
+
+Shadow mapping is fairly easy to implement. The first step was to create a new FBO specifically for rendering depth values - essentially create and add a new depth texture along with disabling the draw and stencil buffers. A light view matrix is need and this essentially is used to tranform each vertex into how the light views it. This is done by setting up an orthographic projection matrix (doesn't change sizes as camera moves away) and a light view matrix - I did this by setting the initial position to `(0, 40, 0)` to cover the whole of my scene and the position it shoud look at to `(120, 40, 120)` which was roughly the centre of my map. From here multiply these 2 matrices and use this `LightSpaceMatrix` within the shaders for rendering depth. 
+
+I found displaying the values of the depth texture onto a quad useful for debugging. Essentially you want to be able to see all of the entities within your scene. When rendering shadows, I'd recommend not rendering terrain as it makes the final shadows clear. 
+
+Once you've got this working the next step is to check if a fragment position is within shadow or not. The first step is to perform perspective division upon the fragment position (multiplied by that `LightSpaceMatrix`) and then convert to NDC. From here get depth value from the texture and use this depth. There are a few things that can be done from here. Adding a bias helps making better shadows however the most effective thing to do it `PCF (Perform Percentage Closer Filtering)` which essentially calculates the average of the values within that depth texture within a close range and add's a value determined by whether the depth minus the bias is greater then that `PCFDepth`. Make sure to multiply the shadow value by diffuse and specular lighting only as ambient is used as a baseline.

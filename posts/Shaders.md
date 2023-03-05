@@ -22,3 +22,6 @@ These are another way to pass data and these are global and can be modified from
 
 ### Vertex Shader
 To set it's output, we must assign position data to `gl_Position`.
+
+### Fragment Shader
+To set it's output, a output value is set like `out vec4 FragColour` and this determines the colour for a vertex. 

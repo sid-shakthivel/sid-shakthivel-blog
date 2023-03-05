@@ -31,7 +31,3 @@ float GetGradient(float X, float Z)
     return Delta * Delta;
 }
 ```
-
-## More on bloom
-
-Gaussian blur is based of a gaussian curve (similar to a bell curve) and using it's values as weights, a blue can be made more natural and relaistic. Two pass gaussian blur saves performance by doing a horizontal blur followed by a vertical blur. `Ping Pong` framebuffers are a pair of buffers which are rendered and swapped. Finally the values need to be blended.

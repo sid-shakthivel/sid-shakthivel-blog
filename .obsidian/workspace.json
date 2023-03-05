@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "6ef0774c4b626b24",
+        "id": "f5b2e12d968e05cb",
         "type": "tabs",
         "children": [
           {
-            "id": "6970f11df91ff15c",
+            "id": "c5e2fef6ba8fff7f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Camera.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cbbe1ec5df1d03e3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/More OpenglGL.md",
+                "file": "posts/Shadow Mapping.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/More OpenglGL.md",
+                "file": "posts/Shadow Mapping.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/More OpenglGL.md",
+                "file": "posts/Shadow Mapping.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/More OpenglGL.md"
+                "file": "posts/Shadow Mapping.md"
               }
             }
           }
@@ -159,17 +146,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cbbe1ec5df1d03e3",
+  "active": "c5e2fef6ba8fff7f",
   "lastOpenFiles": [
-    "posts/Camera.md",
+    "posts/Shaders.md",
+    "posts/Shadow Mapping.md",
+    "posts/Transformations.md",
+    "posts/Auditd.md",
     "posts/HDR, Bloom, Perlin Noise.md",
+    "posts/More OpenglGL.md",
+    "posts/Light Casters + Model Loading.md",
+    "posts/Water.md",
+    "posts/ERA.md",
+    "posts/ELF.md",
+    "posts/FAT.md",
+    "posts/Camera.md",
     "posts/Coordinate Systems.md",
     "posts/Colours, Lighting + Materials.md",
-    "posts/Light Casters + Model Loading.md",
-    "posts/ELF.md",
-    "posts/Shaders.md",
     "posts/Textures.md",
-    "Transformations.md",
     "posts/GUD.md"
   ]
 }
