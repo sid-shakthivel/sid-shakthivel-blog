@@ -1,6 +1,6 @@
 ---
 title: 'Easy Reading Assistant'
-date: '2022-11-27'
+date: '2022-11-26'
 ---
 
 ### Premise
@@ -31,10 +31,9 @@ There's been some research into something called Bionic Reading in which it's ea
 
 ### Dictionary 
 
-I wanted to work with an API this project, so what better for a reading app then an inbuilt dictionary. I was used to working with `fetch` in javascript, so making and parsing an API request seemed daunting however stack overflow came to the rescue detailing exactly how to do it. I ran into a few deserialisation bugs due to not having optional types but once those worked the dictionary worked perfectly. The API I used was https://dictionaryapi.dev/. 
+I wanted to work with an API this project, so what better for a reading app then an inbuilt dictionary. I was used to working with `fetch` in javascript, so making and parsing an API request didn't seem too daunting and stack overflow came to the rescue detailing exactly how to do it. I ran into a few deserialisation bugs due to not having optional types but once those worked the dictionary worked perfectly.The API I used was https://dictionaryapi.dev/ which provided a lot of useful data including not only mutiple meanings but also synonyms and antonyms.
 
 ### Core Data 
 
 The final major feature I wanted to add was the ability to save work and this forced me to use core data but luckily this wasn't too complex. All I had to do was setup an entity and load it in. I used an array of transformable structs. Note that in order to update a transformable struct, it must be deleted and readded. From there, it was a matter of creating a new `File Explorer` view with a modal to edit and delete and piping `NavigationLinks` from the saved data. I ran into some weird bugs in which the Link didn't work but repositioning the `NavigationView` seemed to fix it. 
 
-That's about it well apart from dark mode and perfecting the colours. Creating this app was quite fun and gave me a good knowledge into developing for ios, computer vision, user experiance and lot's of serialisation (unfortunately).
