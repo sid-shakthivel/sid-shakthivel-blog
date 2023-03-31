@@ -1,6 +1,6 @@
 ---
 title: 'Basic Shadow Mapping'
-date: '2022-03-04'
+date: '2023-03-04'
 ---
 
 Shadow mapping is fairly easy to implement. The first step was to create a new FBO specifically for rendering depth values - essentially create and add a new depth texture along with disabling the draw and stencil buffers. A light view matrix is need and this essentially is used to tranform each vertex into how the light views it. This is done by setting up an orthographic projection matrix (doesn't change sizes as camera moves away) and a light view matrix - I did this by setting the initial position to `(0, 40, 0)` to cover the whole of my scene and the position it shoud look at to `(120, 40, 120)` which was roughly the centre of my map. From here multiply these 2 matrices and use this `LightSpaceMatrix` within the shaders for rendering depth. 
